@@ -10,6 +10,8 @@
   </head>
 
   <body>
+    <%= link_to 'Cerrar sesión', destroy_user_session_path, method: :delete  %>
+    <%# Si no se especifica un metodo delete el path no existe %>
     <%= yield %>
   </body>
 </html>
