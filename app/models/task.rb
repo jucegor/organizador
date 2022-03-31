@@ -1,4 +1,5 @@
 class Task < ApplicationRecord
+  has_one_attached :file
   belongs_to :category
   validates :name, :description, presence: true
   validates :name, uniqueness: { case_sensitive: false }

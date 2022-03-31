@@ -20,5 +20,15 @@
   <%= @task.category_id %>
 </p>
 
+<p>
+  <%= link_to "View", @task.file %>
+
+  <%= link_to "Download", @task.file, download: '' %>
+
+</p>
+
 <%= link_to 'Edit', edit_task_path(@task) %> |
 <%= link_to 'Back', tasks_path %>
+
+<%# To make image preview of the PDF worked, I need to install muPDF on WSL in the terminal %>
+<%= image_tag @task.file.preview(resize_to_limit: [500, 500]) %>

@@ -25,6 +25,11 @@ gem 'pry'
 gem 'pry-doc'
 gem 'simple_form'
 gem 'devise'
+gem 'poppler'
+gem 'image_processing', '~> 1.2'
+gem 'bootstrap-sass', '~> 3.3.5'
+gem 'therubyracer'
+gem 'less-rails'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
